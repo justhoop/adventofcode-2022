@@ -1,1 +1,4 @@
 *.txt
+day1/C#/bin/*
+day1/C#/obj/*
+.vscode/*

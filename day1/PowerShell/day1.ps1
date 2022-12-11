@@ -84,7 +84,7 @@ function PartTwo {
     return $totalCalories
 }
 
-$calories = Get-Content .\day1.txt
+$calories = Get-Content ..\day1.txt
 $elves = PartOne -calories $calories
 write-host($elves[-1])
 $totalCalories = PartTwo -elves $elves
