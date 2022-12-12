@@ -109,7 +109,8 @@ function PartTwo {
 		$outcome = $round.Split(" ")[-1]
 		
 		if ($outcome -eq "X") {
-			$iPlay = @{"A" = "C"; "B" = "A"; "C" = "B"}
+			# $iPlay = @{"A" = "C"; "B" = "A"; "C" = "B"}
+			$iPlay = @{"A" = "Z"; "B" = "X"; "C" = "Y"}
 		}
 		elseif ($outcome -eq "Y") {
 			$iPlay = @{"A" = "X"; "B" = "Y"; "C" = "Z"}
@@ -124,7 +125,7 @@ function PartTwo {
 	return $score
 }
 
-$rounds = Get-Content .\day2.txt
+$rounds = Get-Content ..\day2.txt
 $score = PartOne -rounds $rounds
 Write-Host "Part one"$score
 $score = PartTwo -rounds $rounds

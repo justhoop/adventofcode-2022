@@ -2,3 +2,6 @@
 day1/C#/bin/*
 day1/C#/obj/*
 .vscode/*
+day2/C#/bin/*
+day2/C#/obj/*
+*.json
